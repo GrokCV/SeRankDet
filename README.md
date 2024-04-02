@@ -228,15 +228,15 @@ The default image save path is under <SEG_CHECKPOINT_FILE>. You can use `--work-
     <td>92.45</td>
   </tr>
   <tr>
-    <td>SeRankDet</td>
-    <td>81.27</td>
-    <td>79.66</td>
-    <td>73.66</td>
-    <td>69.11</td>
-    <td>76.49</td>
-    <td>71.98</td>
-    <td>94.28</td>
-    <td>93.69</td>
+    <td><strong>SeRankDet</strong></td>
+    <td><strong>81.27</strong></td>
+    <td><strong>79.66</strong></td>
+    <td><strong>73.66</strong></td>
+    <td><strong>69.11</strong></td>
+    <td><strong>76.49</strong></td>
+    <td><strong>71.98</strong></td>
+    <td><strong>94.28</strong></td>
+    <td><strong>93.69</strong></td>
   </tr>
 </tbody>
 </table>
