@@ -129,125 +129,114 @@ The default image save path is under <SEG_CHECKPOINT_FILE>. You can use `--work-
 **Note: Both passwords for BaiduYun and OneDrive is `grok`**.
 
 ### Leaderboard
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-baqh{text-align:center;vertical-align:top}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
-.tg .tg-amwm{font-weight:bold;text-align:center;vertical-align:top}
-</style>
-<table class="tg">
+<table>
 <thead>
   <tr>
-    <th class="tg-c3ow" rowspan="2">Model</th>
-    <th class="tg-c3ow" colspan="2">SIRST</th>
-    <th class="tg-c3ow" colspan="2">IRSTD1k</th>
-    <th class="tg-baqh" colspan="2">SIRSTAUG</th>
-    <th class="tg-baqh" colspan="2">NUDT-SIRST</th>
+    <th rowspan="2">Model</th>
+    <th colspan="2">SIRST</th>
+    <th colspan="2">IRSTD1k</th>
+    <th colspan="2">SIRSTAUG</th>
+    <th colspan="2">NUDT-SIRST</th>
   </tr>
   <tr>
-    <th class="tg-c3ow">IoU</th>
-    <th class="tg-c3ow">nIoU</th>
-    <th class="tg-c3ow">IoU</th>
-    <th class="tg-c3ow">nIoU</th>
-    <th class="tg-baqh">IoU</th>
-    <th class="tg-baqh">nIoU</th>
-    <th class="tg-baqh">IoU</th>
-    <th class="tg-baqh">nIoU</th>
+    <th>IoU</th>
+    <th>nIoU</th>
+    <th>IoU</th>
+    <th>nIoU</th>
+    <th>IoU</th>
+    <th>nIoU</th>
+    <th>IoU</th>
+    <th>nIoU</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-c3ow">ACM</td>
-    <td class="tg-c3ow">72.88</td>
-    <td class="tg-c3ow">72.17</td>
-    <td class="tg-c3ow">63.39</td>
-    <td class="tg-c3ow">60.81</td>
-    <td class="tg-baqh">73.84</td>
-    <td class="tg-baqh">69.83</td>
-    <td class="tg-baqh">68.48</td>
-    <td class="tg-baqh">69.26</td>
+    <td>ACM</td>
+    <td>72.88</td>
+    <td>72.17</td>
+    <td>63.39</td>
+    <td>60.81</td>
+    <td>73.84</td>
+    <td>69.83</td>
+    <td>68.48</td>
+    <td>69.26</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">RDIAN</td>
-    <td class="tg-c3ow">72.85</td>
-    <td class="tg-c3ow">73.96</td>
-    <td class="tg-c3ow">64.37</td>
-    <td class="tg-c3ow">64.90</td>
-    <td class="tg-baqh">74.19</td>
-    <td class="tg-baqh">69.80</td>
-    <td class="tg-baqh">81.06</td>
-    <td class="tg-baqh">81.72</td>
+    <td>RDIAN</td>
+    <td>72.85</td>
+    <td>73.96</td>
+    <td>64.37</td>
+    <td>64.90</td>
+    <td>74.19</td>
+    <td>69.80</td>
+    <td>81.06</td>
+    <td>81.72</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">AGPCNet</td>
-    <td class="tg-c3ow">77.13</td>
-    <td class="tg-c3ow">75.19</td>
-    <td class="tg-c3ow">68.81</td>
-    <td class="tg-c3ow">66.18</td>
-    <td class="tg-baqh">74.71</td>
-    <td class="tg-baqh">71.49</td>
-    <td class="tg-baqh">88.71</td>
-    <td class="tg-baqh">87.48</td>
+    <td>AGPCNet</td>
+    <td>77.13</td>
+    <td>75.19</td>
+    <td>68.81</td>
+    <td>66.18</td>
+    <td>74.71</td>
+    <td>71.49</td>
+    <td>88.71</td>
+    <td>87.48</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">DNANet</td>
-    <td class="tg-c3ow">75.55</td>
-    <td class="tg-c3ow">75.90</td>
-    <td class="tg-c3ow">68.87</td>
-    <td class="tg-c3ow">67.53</td>
-    <td class="tg-baqh">74.88</td>
-    <td class="tg-baqh">70.23</td>
-    <td class="tg-baqh">92.67</td>
-    <td class="tg-baqh">92.09</td>
+    <td>DNANet</td>
+    <td>75.55</td>
+    <td>75.90</td>
+    <td>68.87</td>
+    <td>67.53</td>
+    <td>74.88</td>
+    <td>70.23</td>
+    <td>92.67</td>
+    <td>92.09</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">MTUNet</td>
-    <td class="tg-c3ow">78.75</td>
-    <td class="tg-c3ow">76.82</td>
-    <td class="tg-c3ow">67.50</td>
-    <td class="tg-c3ow">66.15</td>
-    <td class="tg-baqh">74.70</td>
-    <td class="tg-baqh">70.66</td>
-    <td class="tg-baqh">87.49</td>
-    <td class="tg-baqh">87.70</td>
+    <td>MTUNet</td>
+    <td>78.75</td>
+    <td>76.82</td>
+    <td>67.50</td>
+    <td>66.15</td>
+    <td>74.70</td>
+    <td>70.66</td>
+    <td>87.49</td>
+    <td>87.70</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">UIUNet</td>
-    <td class="tg-c3ow">80.08</td>
-    <td class="tg-c3ow">78.09</td>
-    <td class="tg-c3ow">69.13</td>
-    <td class="tg-c3ow">67.19</td>
-    <td class="tg-baqh">74.24</td>
-    <td class="tg-baqh">70.57</td>
-    <td class="tg-baqh">90.77</td>
-    <td class="tg-baqh">90.17</td>
+    <td>UIUNet</td>
+    <td>80.08</td>
+    <td>78.09</td>
+    <td>69.13</td>
+    <td>67.19</td>
+    <td>74.24</td>
+    <td>70.57</td>
+    <td>90.77</td>
+    <td>90.17</td>
   </tr>
   <tr>
-    <td class="tg-c3ow">ABC</td>
-    <td class="tg-c3ow">81.01</td>
-    <td class="tg-c3ow">79.00</td>
-    <td class="tg-c3ow">72.02</td>
-    <td class="tg-c3ow">68.81</td>
-    <td class="tg-baqh">76.12</td>
-    <td class="tg-baqh">71.83</td>
-    <td class="tg-baqh">92.85</td>
-    <td class="tg-baqh">92.45</td>
+    <td>ABC</td>
+    <td>81.01</td>
+    <td>79.00</td>
+    <td>72.02</td>
+    <td>68.81</td>
+    <td>76.12</td>
+    <td>71.83</td>
+    <td>92.85</td>
+    <td>92.45</td>
   </tr>
   <tr>
-    <td class="tg-7btt">SeRankDet</td>
-    <td class="tg-7btt">81.27</td>
-    <td class="tg-7btt">79.66</td>
-    <td class="tg-7btt">73.66</td>
-    <td class="tg-7btt">69.11</td>
-    <td class="tg-amwm">76.49</td>
-    <td class="tg-amwm">71.98</td>
-    <td class="tg-amwm">94.28</td>
-    <td class="tg-amwm">93.69</td>
+    <td>SeRankDet</td>
+    <td>81.27</td>
+    <td>79.66</td>
+    <td>73.66</td>
+    <td>69.11</td>
+    <td>76.49</td>
+    <td>71.98</td>
+    <td>94.28</td>
+    <td>93.69</td>
   </tr>
 </tbody>
 </table>
