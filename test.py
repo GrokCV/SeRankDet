@@ -5,7 +5,6 @@
 # @Software: PyCharm
 import argparse
 import os
-os.environ['CUDA_VISIBLE_DEVICES'] = '6'
 from mmcv import Config
 from tqdm import tqdm
 from build.build_model import build_model
