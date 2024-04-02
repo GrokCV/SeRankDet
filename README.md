@@ -242,4 +242,4 @@ The default image save path is under <SEG_CHECKPOINT_FILE>. You can use `--work-
 </table>
 
 ### Model Zoo
-
+Checkpoint and Train log: [BaiduCloud](https://pan.baidu.com/s/1iyv6Q8N23ywy1g6jGm9SLQ?pwd=grok)
