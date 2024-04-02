@@ -7,9 +7,6 @@ import argparse
 import os
 import time
 
-# TODO Specify GPU issues
-os.environ['CUDA_VISIBLE_DEVICES'] = '3'
-# os.environ['CUDA_VISIBLE_DEVICES'] = '2,3,4,7'
 import torch.distributed
 import torch.nn
 from mmcv import Config, DictAction
