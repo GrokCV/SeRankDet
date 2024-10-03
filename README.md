@@ -1,25 +1,32 @@
-# Pick of the Bunch: Detecting Infrared Small Targets Beyond Hit-Miss Trade-Offs via Selective Rank-Aware Attention
+# 🔥🔥 Pick of the Bunch: Detecting Infrared Small Targets Beyond Hit-Miss Trade-Offs via Selective Rank-Aware Attention 🔥🔥 
 
+Yimian Dai, Peiwen Pan, Yulei Qian, Yuxuan Li, Xiang Li, Jian Yang, Huan Wang
+
+This repository is the official site for "Pick of the Bunch: Detecting Infrared Small Targets Beyond Hit-Miss Trade-Offs via Selective Rank-Aware Attention".
+
+## Abstract
+
+Infrared small target detection faces the inherent challenge of precisely localizing dim targets amidst complex background clutter. Traditional approaches struggle to balance detection precision and false alarm rates. To break this dilemma, we propose SeRankDet, a deep network that achieves high accuracy beyond the conventional hit-miss trade-off, by following the ``Pick of the Bunch'' principle. At its core lies our Selective Rank-Aware Attention (SeRank) module, employing a non-linear Top-K selection process that preserves the most salient responses, preventing target signal dilution while maintaining constant complexity. Furthermore, we replace the static concatenation typical in U-Net structures with our Large Selective Feature Fusion (LSFF) module, a dynamic fusion strategy that empowers SeRankDet with adaptive feature integration, enhancing its ability to discriminate true targets from false alarms. The network's discernment is further refined by our Dilated Difference Convolution (DDC) module, which merges differential convolution aimed at amplifying subtle target characteristics with dilated convolution to expand the receptive field, thereby substantially improving target-background separation. Despite its lightweight architecture, the proposed SeRankDet sets new benchmarks in state-of-the-art performance across multiple public datasets. The code is available at <https://github.com/GrokCV/SeRankDet>.
+
+- [Abstract](#abstract)
 - [Installation](#installation)
   - [Step 1: Create a conda environment](#step-1-create-a-conda-environment)
   - [Step 2: Install PyTorch](#step-2-install-pytorch)
-  - [Step 3: Install OpenMMLab Codebases](#step-3-install-openmmlab-2x-codebases)
+  - [Step 3: Install OpenMMLab Codebases](#step-3-install-openmmlab-codebases)
 - [Dataset Preparation](#dataset-preparation)
   - [File Structure](#file-structure)
   - [Datasets Link](#datasets-link)
 - [Training](#training)
   - [Single GPU Training](#single-gpu-training)
   - [Multi GPU Training](#multi-gpu-training)
+  - [Notes](#notes)
 - [Test](#test)
 - [Model Zoo and Benchmark](#model-zoo-and-benchmark)
   - [Leaderboard](#leaderboard)
   - [Model Zoo](#model-zoo)
-    - [Method A](#method-a)
-    - [Method B](#method-b)
+- [Citation](#citation)
 
-## NoisySIRST Dataset
 
-The NoisySIRST dataset can be accessible via [BaiduYun](https://pan.baidu.com/s/15RUYw23RSC20Xk1c1dMKYA?pwd=grok).
 
 ## Installation
 
@@ -78,8 +85,31 @@ $ cd SeRankDet
 
 ```
 Please make sure that the path of your data set is consistent with the `data_root` in `configs/_base_/datasets/dataset_name.py`
+
 ### Datasets Link
-https://drive.google.com/drive/folders/1RGpVHccGb8B4_spX_RZPEMW9pyeXOIaC?usp=sharing
+
+The datasets used in this project and the dataset split files can be downloaded from the following links:
+
+* NoisySIRST Dataset
+  * [Baidu Netdisk](https://pan.baidu.com/s/15RUYw23RSC20Xk1c1dMKYA?pwd=grok)
+  * [OneDrive](https://1drv.ms/f/s!AmElF7K4aY9pgYEae4JdbbMd--tzNQ?e=yKwxa3)
+* SIRST Dataset
+  * [Baidu Netdisk](https://pan.baidu.com/s/1LgnBKcE8Cqlay5GnXfUaLA?pwd=grok)
+  * [OneDrive](https://1drv.ms/f/s!AmElF7K4aY9pgYEgG0VEoH3nDbiWDA?e=gkUW2W)
+* SIRST-AUG Dataset
+  * [Baidu Netdisk](https://pan.baidu.com/s/1_kAocokYSclQNf_ZLWPIhQ?pwd=grok)
+  * [OneDrive](https://1drv.ms/f/s!AmElF7K4aY9pgYEfdtbrZhLsbd0ITg?e=thyA6h)
+* NUDT-SIRST Dataset
+  * [Baidu Netdisk](https://pan.baidu.com/s/16BbL9H38cIcvaBh4tPNTCw?pwd=grok)
+  * [OneDrive](https://1drv.ms/f/s!AmElF7K4aY9pgYEdBMrQDFM1Vi24DQ?e=vBNoN4)
+* IRSTD1K Dataset
+  * [Baidu Netdisk](https://pan.baidu.com/s/1nRoZu1eI9BLnpmsxw0Kdwg?pwd=grok)
+  * [OneDrive](https://1drv.ms/f/s!AmElF7K4aY9pgYEepi2ipymni0amNQ?e=XZILFh)
+
+
+
+<!-- The NoisySIRST dataset can be accessible via .
+https://drive.google.com/drive/folders/1RGpVHccGb8B4_spX_RZPEMW9pyeXOIaC?usp=sharing -->
 
 ## Training
 ### Single GPU Training
@@ -246,3 +276,19 @@ The default image save path is under <SEG_CHECKPOINT_FILE>. You can use `--work-
 
 ### Model Zoo
 Checkpoint and Train log: [BaiduCloud](https://pan.baidu.com/s/1iyv6Q8N23ywy1g6jGm9SLQ?pwd=grok)
+
+## Citation
+
+If you use this toolbox or benchmark in your research, please cite this project.
+
+```bibtex
+@article{dai2024SeRankDet,
+  title={Pick of the Bunch: Detecting Infrared Small Targets Beyond Hit-Miss Trade-Offs via Selective Rank-Aware Attention},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  author={Dai, Yimian and Pan, Peiwen and Qian, Yulei and Li, Yuxuan and Li, Xiang and Yang, Jian and Wang, Huan},
+  year={2024},
+  volume={62},
+  number={},
+  pages={1-15}
+}
+```
